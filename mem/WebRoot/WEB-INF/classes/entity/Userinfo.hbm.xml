@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+	<class name="entity.Userinfo" table="userinfo">
+		<id name="username" column="username" type="string">
+			<generator class="assigned"/>
+		</id>
+		<property name="password" column="password" type="string" />
+		<property name="name" column="name" type="string" />
+		<property name="idnumber" column="IDnumber" type="string" />
+		<property name="email" column="email" type="string" />
+		<property name="sex" column="sex" type="string" />
+		<property name="tel" column="tel" type="string" />
+		<property name="mac" column="MAC" type="string" />
+		<property name="campus" column="campus" type="string" />
+		<property name="build" column="build" type="string" />
+		<property name="room" column="room" type="string" />
+		<property name="department" column="department" type="string" />
+		<property name="type" column="type" type="string" />
+		<property name="typeid" column="typeID" type="string" />
+		<property name="isverify" column="isverify" type="string" />
+	</class>
+
+</hibernate-mapping>
